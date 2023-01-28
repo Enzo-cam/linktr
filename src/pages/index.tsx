@@ -43,20 +43,30 @@ export default function Home() {
       ))}
       <div className='flex mt-4 gap-3'>
         {data.socials.map((social) => {
-          if(social.href.includes('twitter')){
-            return(
-              <AiFillTwitterSquare 
-                key={social.title}
-                className='text-4xl text-white'
-              />
-            )
-          }
           if(social.href.includes('instagram')){
             return(
-              <AiOutlineInstagram 
+              <a
                 key={social.title}
-                className='text-4xl text-white'
-              />
+                target={"blank"}
+                href={social.href}
+              >
+                <AiOutlineInstagram 
+                  className='text-4xl text-white'
+                />
+              </a>
+            )
+          }
+          if(social.href.includes('twitter')){
+            return(
+              <a
+                key={social.title}
+                target={"blank"}
+                href={social.href}
+              >
+                <AiFillTwitterSquare 
+                  className='text-4xl text-white'
+                />
+              </a>
             )
           }
         })}
