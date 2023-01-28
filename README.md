@@ -1,7 +1,7 @@
 Based in the idea from LinkTree, I  tried to do the same but with my links from my pages and social medias using Next13 and TypeScript to get some practice.
 
 ### Live Demo
-* [LinkTr](https://linktr.vercel.app) 
+* [LinkTr](https://eclinktr.vercel.app) 
 
 ### What I've use?
 * Next
